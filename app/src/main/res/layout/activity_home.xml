@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/main_drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_back">
+
+        <ImageButton
+            android:id="@+id/main_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/oval_ripple"
+            android:padding="8dp"
+            android:tint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.037"
+            app:srcCompat="@drawable/ic_menu" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="128dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="48dp"
+            android:text="Accueil"
+            android:textColor="#F4D160"
+            android:textSize="36dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+
+            app:cardElevation="10dp"
+            android:elevation="8dp"
+            android:id="@+id/pointageCard"
+            android:layout_width="120dp"
+            android:layout_height="147dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="151dp"
+            android:layout_marginEnd="238dp"
+            android:layout_marginBottom="335dp"
+            app:cardBackgroundColor="@color/cardBackgroundAccueil"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="81.42dp"
+                android:layout_height="91dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/hire" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="100dp"
+                android:text="POINTAGE"
+                android:textColor="#03506F"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/operatorsCard"
+            android:layout_width="120dp"
+            android:layout_height="147dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="151dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="335dp"
+            app:cardBackgroundColor="#F3EBEB"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            android:elevation="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cardView"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="91dp"
+                android:layout_height="91dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/participant" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="100dp"
+                android:text="OPERATEURS"
+                android:textColor="#03506F"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/pointagefinCard"
+            android:layout_width="120dp"
+            android:layout_height="147dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="280dp"
+            android:layout_marginEnd="248dp"
+            android:elevation="8dp"
+            app:cardBackgroundColor="@color/cardBackgroundAccueil"
+
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            >
+
+
+            <ImageView
+                android:id="@+id/imageView2fin"
+                android:layout_width="81.42dp"
+                android:layout_height="91dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/hire" />
+
+            <TextView
+                android:id="@+id/textView6fin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="100dp"
+                android:text="Pointage    sortie"
+                android:textColor="#03506F"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/valider"
+            android:layout_width="120dp"
+            android:layout_height="147dp"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="82dp"
+            android:layout_marginBottom="104dp"
+            android:elevation="8dp"
+            app:cardBackgroundColor="#F3EBEB"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="91dp"
+                android:layout_height="91dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/user" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="110dp"
+                android:text="AJOUTER"
+                android:textColor="#03506F"
+                android:textSize="16dp" />
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/main_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:itemIconTint="@color/azra"
+        app:itemTextColor="@color/azra"
+        app:menu="@menu/main_nav_menu">
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

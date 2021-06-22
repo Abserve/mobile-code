@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "690161197506",
+    "project_id": "abserve",
+    "storage_bucket": "abserve.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:690161197506:android:d28591fc74ccdcead4765b",
+        "android_client_info": {
+          "package_name": "com.DicHAc.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "690161197506-sddijnkkk5m81jotm6ql7ajnairsr2vd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNhKD_2fPtwcoYrppcrmE1AkV29u6t23c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "690161197506-sddijnkkk5m81jotm6ql7ajnairsr2vd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
